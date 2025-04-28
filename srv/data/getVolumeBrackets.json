@@ -1,0 +1,40 @@
+{
+  "success": true,
+  "data": {
+    "rows": [
+      {
+        "token_count": 17,
+        "volume_bracket": "1 m +"
+      },
+      {
+        "token_count": 155,
+        "volume_bracket": "100 k +"
+      },
+      {
+        "token_count": 47,
+        "volume_bracket": "10 k +"
+      },
+      {
+        "token_count": 4,
+        "volume_bracket": "5 k +"
+      }
+    ],
+    "metadata": {
+      "column_names": [
+        "volume_bracket",
+        "token_count"
+      ],
+      "column_types": [
+        "varchar(7)",
+        "bigint"
+      ],
+      "row_count": 4,
+      "result_set_bytes": 63,
+      "total_row_count": 4,
+      "total_result_set_bytes": 63,
+      "datapoint_count": 8,
+      "pending_time_millis": 1577,
+      "execution_time_millis": 13933
+    }
+  }
+}

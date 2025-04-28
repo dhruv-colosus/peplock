@@ -1,0 +1,1831 @@
+{
+  "success": true,
+  "data": {
+    "rows": [
+      {
+        "day": "2025-04-21",
+        "new_users": 10575,
+        "recurring_users": 30484
+      },
+      {
+        "day": "2025-04-20",
+        "new_users": 51836,
+        "recurring_users": 76795
+      },
+      {
+        "day": "2025-04-19",
+        "new_users": 51278,
+        "recurring_users": 80962
+      },
+      {
+        "day": "2025-04-18",
+        "new_users": 57348,
+        "recurring_users": 88213
+      },
+      {
+        "day": "2025-04-17",
+        "new_users": 70647,
+        "recurring_users": 93573
+      },
+      {
+        "day": "2025-04-16",
+        "new_users": 71131,
+        "recurring_users": 94358
+      },
+      {
+        "day": "2025-04-15",
+        "new_users": 78611,
+        "recurring_users": 101470
+      },
+      {
+        "day": "2025-04-14",
+        "new_users": 75683,
+        "recurring_users": 99095
+      },
+      {
+        "day": "2025-04-13",
+        "new_users": 68331,
+        "recurring_users": 82833
+      },
+      {
+        "day": "2025-04-12",
+        "new_users": 70704,
+        "recurring_users": 88894
+      },
+      {
+        "day": "2025-04-11",
+        "new_users": 63374,
+        "recurring_users": 87091
+      },
+      {
+        "day": "2025-04-10",
+        "new_users": 63575,
+        "recurring_users": 89915
+      },
+      {
+        "day": "2025-04-09",
+        "new_users": 79906,
+        "recurring_users": 91081
+      },
+      {
+        "day": "2025-04-08",
+        "new_users": 95206,
+        "recurring_users": 90951
+      },
+      {
+        "day": "2025-04-07",
+        "new_users": 65515,
+        "recurring_users": 92458
+      },
+      {
+        "day": "2025-04-06",
+        "new_users": 66641,
+        "recurring_users": 82996
+      },
+      {
+        "day": "2025-04-05",
+        "new_users": 58876,
+        "recurring_users": 84456
+      },
+      {
+        "day": "2025-04-04",
+        "new_users": 50448,
+        "recurring_users": 90991
+      },
+      {
+        "day": "2025-04-03",
+        "new_users": 48745,
+        "recurring_users": 95918
+      },
+      {
+        "day": "2025-04-02",
+        "new_users": 64028,
+        "recurring_users": 99131
+      },
+      {
+        "day": "2025-04-01",
+        "new_users": 81090,
+        "recurring_users": 103798
+      },
+      {
+        "day": "2025-03-31",
+        "new_users": 65748,
+        "recurring_users": 99684
+      },
+      {
+        "day": "2025-03-30",
+        "new_users": 80028,
+        "recurring_users": 96146
+      },
+      {
+        "day": "2025-03-29",
+        "new_users": 79257,
+        "recurring_users": 101278
+      },
+      {
+        "day": "2025-03-28",
+        "new_users": 60935,
+        "recurring_users": 112806
+      },
+      {
+        "day": "2025-03-27",
+        "new_users": 74271,
+        "recurring_users": 107580
+      },
+      {
+        "day": "2025-03-26",
+        "new_users": 76942,
+        "recurring_users": 105928
+      },
+      {
+        "day": "2025-03-25",
+        "new_users": 87916,
+        "recurring_users": 106561
+      },
+      {
+        "day": "2025-03-24",
+        "new_users": 79714,
+        "recurring_users": 110056
+      },
+      {
+        "day": "2025-03-23",
+        "new_users": 73127,
+        "recurring_users": 96219
+      },
+      {
+        "day": "2025-03-22",
+        "new_users": 60926,
+        "recurring_users": 95765
+      },
+      {
+        "day": "2025-03-21",
+        "new_users": 79305,
+        "recurring_users": 91361
+      },
+      {
+        "day": "2025-03-20",
+        "new_users": 72545,
+        "recurring_users": 107293
+      },
+      {
+        "day": "2025-03-19",
+        "new_users": 59158,
+        "recurring_users": 113816
+      },
+      {
+        "day": "2025-03-18",
+        "new_users": 66175,
+        "recurring_users": 107312
+      },
+      {
+        "day": "2025-03-17",
+        "new_users": 65279,
+        "recurring_users": 117372
+      },
+      {
+        "day": "2025-03-16",
+        "new_users": 57769,
+        "recurring_users": 128682
+      },
+      {
+        "day": "2025-03-15",
+        "new_users": 64974,
+        "recurring_users": 140351
+      },
+      {
+        "day": "2025-03-14",
+        "new_users": 57138,
+        "recurring_users": 156579
+      },
+      {
+        "day": "2025-03-13",
+        "new_users": 65729,
+        "recurring_users": 142880
+      },
+      {
+        "day": "2025-03-12",
+        "new_users": 56472,
+        "recurring_users": 133500
+      },
+      {
+        "day": "2025-03-11",
+        "new_users": 51020,
+        "recurring_users": 144857
+      },
+      {
+        "day": "2025-03-10",
+        "new_users": 51259,
+        "recurring_users": 142050
+      },
+      {
+        "day": "2025-03-09",
+        "new_users": 51670,
+        "recurring_users": 136280
+      },
+      {
+        "day": "2025-03-08",
+        "new_users": 50570,
+        "recurring_users": 147402
+      },
+      {
+        "day": "2025-03-07",
+        "new_users": 55308,
+        "recurring_users": 150913
+      },
+      {
+        "day": "2025-03-06",
+        "new_users": 74269,
+        "recurring_users": 145432
+      },
+      {
+        "day": "2025-03-05",
+        "new_users": 60745,
+        "recurring_users": 149261
+      },
+      {
+        "day": "2025-03-04",
+        "new_users": 90047,
+        "recurring_users": 156887
+      },
+      {
+        "day": "2025-03-03",
+        "new_users": 87467,
+        "recurring_users": 149849
+      },
+      {
+        "day": "2025-03-02",
+        "new_users": 113130,
+        "recurring_users": 143971
+      },
+      {
+        "day": "2025-03-01",
+        "new_users": 108468,
+        "recurring_users": 128834
+      },
+      {
+        "day": "2025-02-28",
+        "new_users": 66009,
+        "recurring_users": 135350
+      },
+      {
+        "day": "2025-02-27",
+        "new_users": 67515,
+        "recurring_users": 146948
+      },
+      {
+        "day": "2025-02-26",
+        "new_users": 76939,
+        "recurring_users": 140983
+      },
+      {
+        "day": "2025-02-25",
+        "new_users": 60978,
+        "recurring_users": 123566
+      },
+      {
+        "day": "2025-02-24",
+        "new_users": 96465,
+        "recurring_users": 145168
+      },
+      {
+        "day": "2025-02-23",
+        "new_users": 70713,
+        "recurring_users": 151610
+      },
+      {
+        "day": "2025-02-22",
+        "new_users": 71530,
+        "recurring_users": 160666
+      },
+      {
+        "day": "2025-02-21",
+        "new_users": 91436,
+        "recurring_users": 184716
+      },
+      {
+        "day": "2025-02-20",
+        "new_users": 88466,
+        "recurring_users": 187399
+      },
+      {
+        "day": "2025-02-19",
+        "new_users": 81904,
+        "recurring_users": 205410
+      },
+      {
+        "day": "2025-02-18",
+        "new_users": 80792,
+        "recurring_users": 202823
+      },
+      {
+        "day": "2025-02-17",
+        "new_users": 102998,
+        "recurring_users": 191604
+      },
+      {
+        "day": "2025-02-16",
+        "new_users": 108592,
+        "recurring_users": 201727
+      },
+      {
+        "day": "2025-02-15",
+        "new_users": 102075,
+        "recurring_users": 210350
+      },
+      {
+        "day": "2025-02-14",
+        "new_users": 111299,
+        "recurring_users": 197992
+      },
+      {
+        "day": "2025-02-13",
+        "new_users": 114391,
+        "recurring_users": 210546
+      },
+      {
+        "day": "2025-02-12",
+        "new_users": 113665,
+        "recurring_users": 208851
+      },
+      {
+        "day": "2025-02-11",
+        "new_users": 116885,
+        "recurring_users": 225720
+      },
+      {
+        "day": "2025-02-10",
+        "new_users": 122712,
+        "recurring_users": 213311
+      },
+      {
+        "day": "2025-02-09",
+        "new_users": 105055,
+        "recurring_users": 181100
+      },
+      {
+        "day": "2025-02-08",
+        "new_users": 88235,
+        "recurring_users": 168245
+      },
+      {
+        "day": "2025-02-07",
+        "new_users": 102162,
+        "recurring_users": 175646
+      },
+      {
+        "day": "2025-02-06",
+        "new_users": 104798,
+        "recurring_users": 172647
+      },
+      {
+        "day": "2025-02-05",
+        "new_users": 111645,
+        "recurring_users": 164374
+      },
+      {
+        "day": "2025-02-04",
+        "new_users": 114370,
+        "recurring_users": 187634
+      },
+      {
+        "day": "2025-02-03",
+        "new_users": 95632,
+        "recurring_users": 213703
+      },
+      {
+        "day": "2025-02-02",
+        "new_users": 102660,
+        "recurring_users": 211093
+      },
+      {
+        "day": "2025-02-01",
+        "new_users": 131101,
+        "recurring_users": 230112
+      },
+      {
+        "day": "2025-01-31",
+        "new_users": 139113,
+        "recurring_users": 258642
+      },
+      {
+        "day": "2025-01-30",
+        "new_users": 166949,
+        "recurring_users": 257599
+      },
+      {
+        "day": "2025-01-29",
+        "new_users": 141603,
+        "recurring_users": 230300
+      },
+      {
+        "day": "2025-01-28",
+        "new_users": 137800,
+        "recurring_users": 243075
+      },
+      {
+        "day": "2025-01-27",
+        "new_users": 120249,
+        "recurring_users": 244225
+      },
+      {
+        "day": "2025-01-26",
+        "new_users": 146767,
+        "recurring_users": 230092
+      },
+      {
+        "day": "2025-01-25",
+        "new_users": 176999,
+        "recurring_users": 229921
+      },
+      {
+        "day": "2025-01-24",
+        "new_users": 170909,
+        "recurring_users": 236699
+      },
+      {
+        "day": "2025-01-23",
+        "new_users": 183189,
+        "recurring_users": 226164
+      },
+      {
+        "day": "2025-01-22",
+        "new_users": 153084,
+        "recurring_users": 217106
+      },
+      {
+        "day": "2025-01-21",
+        "new_users": 142456,
+        "recurring_users": 196065
+      },
+      {
+        "day": "2025-01-20",
+        "new_users": 153023,
+        "recurring_users": 168402
+      },
+      {
+        "day": "2025-01-19",
+        "new_users": 109962,
+        "recurring_users": 163416
+      },
+      {
+        "day": "2025-01-18",
+        "new_users": 90085,
+        "recurring_users": 159192
+      },
+      {
+        "day": "2025-01-17",
+        "new_users": 101441,
+        "recurring_users": 170190
+      },
+      {
+        "day": "2025-01-16",
+        "new_users": 114835,
+        "recurring_users": 196877
+      },
+      {
+        "day": "2025-01-15",
+        "new_users": 114670,
+        "recurring_users": 220034
+      },
+      {
+        "day": "2025-01-14",
+        "new_users": 113601,
+        "recurring_users": 200455
+      },
+      {
+        "day": "2025-01-13",
+        "new_users": 91027,
+        "recurring_users": 191468
+      },
+      {
+        "day": "2025-01-12",
+        "new_users": 113050,
+        "recurring_users": 183202
+      },
+      {
+        "day": "2025-01-11",
+        "new_users": 107310,
+        "recurring_users": 191027
+      },
+      {
+        "day": "2025-01-10",
+        "new_users": 119567,
+        "recurring_users": 209581
+      },
+      {
+        "day": "2025-01-09",
+        "new_users": 116961,
+        "recurring_users": 219255
+      },
+      {
+        "day": "2025-01-08",
+        "new_users": 111324,
+        "recurring_users": 212875
+      },
+      {
+        "day": "2025-01-07",
+        "new_users": 113666,
+        "recurring_users": 202683
+      },
+      {
+        "day": "2025-01-06",
+        "new_users": 126292,
+        "recurring_users": 204741
+      },
+      {
+        "day": "2025-01-05",
+        "new_users": 118629,
+        "recurring_users": 192959
+      },
+      {
+        "day": "2025-01-04",
+        "new_users": 126000,
+        "recurring_users": 188561
+      },
+      {
+        "day": "2025-01-03",
+        "new_users": 141208,
+        "recurring_users": 180288
+      },
+      {
+        "day": "2025-01-02",
+        "new_users": 135203,
+        "recurring_users": 167226
+      },
+      {
+        "day": "2025-01-01",
+        "new_users": 99010,
+        "recurring_users": 145388
+      },
+      {
+        "day": "2024-12-31",
+        "new_users": 121254,
+        "recurring_users": 149384
+      },
+      {
+        "day": "2024-12-30",
+        "new_users": 123637,
+        "recurring_users": 154167
+      },
+      {
+        "day": "2024-12-29",
+        "new_users": 105747,
+        "recurring_users": 140607
+      },
+      {
+        "day": "2024-12-28",
+        "new_users": 124778,
+        "recurring_users": 131862
+      },
+      {
+        "day": "2024-12-27",
+        "new_users": 139743,
+        "recurring_users": 129118
+      },
+      {
+        "day": "2024-12-26",
+        "new_users": 121554,
+        "recurring_users": 123191
+      },
+      {
+        "day": "2024-12-25",
+        "new_users": 117595,
+        "recurring_users": 105179
+      },
+      {
+        "day": "2024-12-24",
+        "new_users": 122283,
+        "recurring_users": 112887
+      },
+      {
+        "day": "2024-12-23",
+        "new_users": 106203,
+        "recurring_users": 113668
+      },
+      {
+        "day": "2024-12-22",
+        "new_users": 103209,
+        "recurring_users": 104897
+      },
+      {
+        "day": "2024-12-21",
+        "new_users": 113771,
+        "recurring_users": 104634
+      },
+      {
+        "day": "2024-12-20",
+        "new_users": 124084,
+        "recurring_users": 109451
+      },
+      {
+        "day": "2024-12-19",
+        "new_users": 135700,
+        "recurring_users": 121036
+      },
+      {
+        "day": "2024-12-18",
+        "new_users": 135909,
+        "recurring_users": 126574
+      },
+      {
+        "day": "2024-12-17",
+        "new_users": 124862,
+        "recurring_users": 118060
+      },
+      {
+        "day": "2024-12-16",
+        "new_users": 143482,
+        "recurring_users": 117982
+      },
+      {
+        "day": "2024-12-15",
+        "new_users": 135780,
+        "recurring_users": 105824
+      },
+      {
+        "day": "2024-12-14",
+        "new_users": 142523,
+        "recurring_users": 107447
+      },
+      {
+        "day": "2024-12-13",
+        "new_users": 146543,
+        "recurring_users": 125059
+      },
+      {
+        "day": "2024-12-12",
+        "new_users": 185837,
+        "recurring_users": 128156
+      },
+      {
+        "day": "2024-12-11",
+        "new_users": 167697,
+        "recurring_users": 121327
+      },
+      {
+        "day": "2024-12-10",
+        "new_users": 122499,
+        "recurring_users": 117448
+      },
+      {
+        "day": "2024-12-09",
+        "new_users": 117646,
+        "recurring_users": 110630
+      },
+      {
+        "day": "2024-12-08",
+        "new_users": 106974,
+        "recurring_users": 99507
+      },
+      {
+        "day": "2024-12-07",
+        "new_users": 106436,
+        "recurring_users": 98472
+      },
+      {
+        "day": "2024-12-06",
+        "new_users": 111212,
+        "recurring_users": 106577
+      },
+      {
+        "day": "2024-12-05",
+        "new_users": 114833,
+        "recurring_users": 112118
+      },
+      {
+        "day": "2024-12-04",
+        "new_users": 114973,
+        "recurring_users": 111272
+      },
+      {
+        "day": "2024-12-03",
+        "new_users": 117083,
+        "recurring_users": 117345
+      },
+      {
+        "day": "2024-12-02",
+        "new_users": 114745,
+        "recurring_users": 118946
+      },
+      {
+        "day": "2024-12-01",
+        "new_users": 109788,
+        "recurring_users": 119731
+      },
+      {
+        "day": "2024-11-30",
+        "new_users": 134162,
+        "recurring_users": 123943
+      },
+      {
+        "day": "2024-11-29",
+        "new_users": 216837,
+        "recurring_users": 128251
+      },
+      {
+        "day": "2024-11-28",
+        "new_users": 191355,
+        "recurring_users": 130081
+      },
+      {
+        "day": "2024-11-27",
+        "new_users": 186244,
+        "recurring_users": 130840
+      },
+      {
+        "day": "2024-11-26",
+        "new_users": 175744,
+        "recurring_users": 125435
+      },
+      {
+        "day": "2024-11-25",
+        "new_users": 166456,
+        "recurring_users": 129476
+      },
+      {
+        "day": "2024-11-24",
+        "new_users": 138994,
+        "recurring_users": 124747
+      },
+      {
+        "day": "2024-11-23",
+        "new_users": 136777,
+        "recurring_users": 126885
+      },
+      {
+        "day": "2024-11-22",
+        "new_users": 121354,
+        "recurring_users": 141158
+      },
+      {
+        "day": "2024-11-21",
+        "new_users": 134416,
+        "recurring_users": 141941
+      },
+      {
+        "day": "2024-11-20",
+        "new_users": 130155,
+        "recurring_users": 141611
+      },
+      {
+        "day": "2024-11-19",
+        "new_users": 100558,
+        "recurring_users": 122983
+      },
+      {
+        "day": "2024-11-18",
+        "new_users": 91174,
+        "recurring_users": 124659
+      },
+      {
+        "day": "2024-11-17",
+        "new_users": 79846,
+        "recurring_users": 113420
+      },
+      {
+        "day": "2024-11-16",
+        "new_users": 66609,
+        "recurring_users": 102555
+      },
+      {
+        "day": "2024-11-15",
+        "new_users": 66299,
+        "recurring_users": 105912
+      },
+      {
+        "day": "2024-11-14",
+        "new_users": 60747,
+        "recurring_users": 103447
+      },
+      {
+        "day": "2024-11-13",
+        "new_users": 55950,
+        "recurring_users": 96314
+      },
+      {
+        "day": "2024-11-12",
+        "new_users": 56218,
+        "recurring_users": 90264
+      },
+      {
+        "day": "2024-11-11",
+        "new_users": 54197,
+        "recurring_users": 87497
+      },
+      {
+        "day": "2024-11-10",
+        "new_users": 40799,
+        "recurring_users": 74581
+      },
+      {
+        "day": "2024-11-09",
+        "new_users": 36775,
+        "recurring_users": 69039
+      },
+      {
+        "day": "2024-11-08",
+        "new_users": 45267,
+        "recurring_users": 75682
+      },
+      {
+        "day": "2024-11-07",
+        "new_users": 44867,
+        "recurring_users": 78016
+      },
+      {
+        "day": "2024-11-06",
+        "new_users": 47244,
+        "recurring_users": 81322
+      },
+      {
+        "day": "2024-11-05",
+        "new_users": 45993,
+        "recurring_users": 72985
+      },
+      {
+        "day": "2024-11-04",
+        "new_users": 41697,
+        "recurring_users": 68833
+      },
+      {
+        "day": "2024-11-03",
+        "new_users": 34352,
+        "recurring_users": 65924
+      },
+      {
+        "day": "2024-11-02",
+        "new_users": 35677,
+        "recurring_users": 63413
+      },
+      {
+        "day": "2024-11-01",
+        "new_users": 40407,
+        "recurring_users": 64920
+      },
+      {
+        "day": "2024-10-31",
+        "new_users": 45072,
+        "recurring_users": 69531
+      },
+      {
+        "day": "2024-10-30",
+        "new_users": 48343,
+        "recurring_users": 71766
+      },
+      {
+        "day": "2024-10-29",
+        "new_users": 51918,
+        "recurring_users": 76005
+      },
+      {
+        "day": "2024-10-28",
+        "new_users": 48557,
+        "recurring_users": 66562
+      },
+      {
+        "day": "2024-10-27",
+        "new_users": 42404,
+        "recurring_users": 62949
+      },
+      {
+        "day": "2024-10-26",
+        "new_users": 35605,
+        "recurring_users": 60423
+      },
+      {
+        "day": "2024-10-25",
+        "new_users": 47249,
+        "recurring_users": 65349
+      },
+      {
+        "day": "2024-10-24",
+        "new_users": 55915,
+        "recurring_users": 68429
+      },
+      {
+        "day": "2024-10-23",
+        "new_users": 52033,
+        "recurring_users": 66727
+      },
+      {
+        "day": "2024-10-22",
+        "new_users": 49855,
+        "recurring_users": 67472
+      },
+      {
+        "day": "2024-10-21",
+        "new_users": 43760,
+        "recurring_users": 63595
+      },
+      {
+        "day": "2024-10-20",
+        "new_users": 45487,
+        "recurring_users": 59050
+      },
+      {
+        "day": "2024-10-19",
+        "new_users": 51776,
+        "recurring_users": 63114
+      },
+      {
+        "day": "2024-10-18",
+        "new_users": 43967,
+        "recurring_users": 57615
+      },
+      {
+        "day": "2024-10-17",
+        "new_users": 40697,
+        "recurring_users": 55310
+      },
+      {
+        "day": "2024-10-16",
+        "new_users": 38482,
+        "recurring_users": 56930
+      },
+      {
+        "day": "2024-10-15",
+        "new_users": 37681,
+        "recurring_users": 54406
+      },
+      {
+        "day": "2024-10-14",
+        "new_users": 35875,
+        "recurring_users": 55662
+      },
+      {
+        "day": "2024-10-13",
+        "new_users": 27820,
+        "recurring_users": 48001
+      },
+      {
+        "day": "2024-10-12",
+        "new_users": 30133,
+        "recurring_users": 46706
+      },
+      {
+        "day": "2024-10-11",
+        "new_users": 27790,
+        "recurring_users": 45986
+      },
+      {
+        "day": "2024-10-10",
+        "new_users": 26689,
+        "recurring_users": 44478
+      },
+      {
+        "day": "2024-10-09",
+        "new_users": 26980,
+        "recurring_users": 46129
+      },
+      {
+        "day": "2024-10-08",
+        "new_users": 25263,
+        "recurring_users": 42781
+      },
+      {
+        "day": "2024-10-07",
+        "new_users": 28224,
+        "recurring_users": 44587
+      },
+      {
+        "day": "2024-10-06",
+        "new_users": 25330,
+        "recurring_users": 42141
+      },
+      {
+        "day": "2024-10-05",
+        "new_users": 29471,
+        "recurring_users": 44370
+      },
+      {
+        "day": "2024-10-04",
+        "new_users": 29190,
+        "recurring_users": 42167
+      },
+      {
+        "day": "2024-10-03",
+        "new_users": 30761,
+        "recurring_users": 43685
+      },
+      {
+        "day": "2024-10-02",
+        "new_users": 29865,
+        "recurring_users": 43688
+      },
+      {
+        "day": "2024-10-01",
+        "new_users": 29529,
+        "recurring_users": 44084
+      },
+      {
+        "day": "2024-09-30",
+        "new_users": 28369,
+        "recurring_users": 45120
+      },
+      {
+        "day": "2024-09-29",
+        "new_users": 26511,
+        "recurring_users": 43082
+      },
+      {
+        "day": "2024-09-28",
+        "new_users": 25369,
+        "recurring_users": 42004
+      },
+      {
+        "day": "2024-09-27",
+        "new_users": 28951,
+        "recurring_users": 43011
+      },
+      {
+        "day": "2024-09-26",
+        "new_users": 25028,
+        "recurring_users": 39116
+      },
+      {
+        "day": "2024-09-25",
+        "new_users": 21907,
+        "recurring_users": 32496
+      },
+      {
+        "day": "2024-09-24",
+        "new_users": 23561,
+        "recurring_users": 30335
+      },
+      {
+        "day": "2024-09-23",
+        "new_users": 18685,
+        "recurring_users": 28750
+      },
+      {
+        "day": "2024-09-22",
+        "new_users": 15150,
+        "recurring_users": 26056
+      },
+      {
+        "day": "2024-09-21",
+        "new_users": 14705,
+        "recurring_users": 25392
+      },
+      {
+        "day": "2024-09-20",
+        "new_users": 17175,
+        "recurring_users": 26074
+      },
+      {
+        "day": "2024-09-19",
+        "new_users": 22108,
+        "recurring_users": 26805
+      },
+      {
+        "day": "2024-09-18",
+        "new_users": 20367,
+        "recurring_users": 25312
+      },
+      {
+        "day": "2024-09-17",
+        "new_users": 16504,
+        "recurring_users": 25229
+      },
+      {
+        "day": "2024-09-16",
+        "new_users": 13400,
+        "recurring_users": 24391
+      },
+      {
+        "day": "2024-09-15",
+        "new_users": 17810,
+        "recurring_users": 24049
+      },
+      {
+        "day": "2024-09-14",
+        "new_users": 14659,
+        "recurring_users": 23668
+      },
+      {
+        "day": "2024-09-13",
+        "new_users": 15536,
+        "recurring_users": 25418
+      },
+      {
+        "day": "2024-09-12",
+        "new_users": 20094,
+        "recurring_users": 27248
+      },
+      {
+        "day": "2024-09-11",
+        "new_users": 20752,
+        "recurring_users": 28573
+      },
+      {
+        "day": "2024-09-10",
+        "new_users": 18255,
+        "recurring_users": 28997
+      },
+      {
+        "day": "2024-09-09",
+        "new_users": 18684,
+        "recurring_users": 28341
+      },
+      {
+        "day": "2024-09-08",
+        "new_users": 12421,
+        "recurring_users": 23865
+      },
+      {
+        "day": "2024-09-07",
+        "new_users": 13335,
+        "recurring_users": 23062
+      },
+      {
+        "day": "2024-09-06",
+        "new_users": 23130,
+        "recurring_users": 25804
+      },
+      {
+        "day": "2024-09-05",
+        "new_users": 22860,
+        "recurring_users": 27867
+      },
+      {
+        "day": "2024-09-04",
+        "new_users": 22938,
+        "recurring_users": 28023
+      },
+      {
+        "day": "2024-09-03",
+        "new_users": 29873,
+        "recurring_users": 29458
+      },
+      {
+        "day": "2024-09-02",
+        "new_users": 26886,
+        "recurring_users": 27199
+      },
+      {
+        "day": "2024-09-01",
+        "new_users": 14156,
+        "recurring_users": 25358
+      },
+      {
+        "day": "2024-08-31",
+        "new_users": 14591,
+        "recurring_users": 24883
+      },
+      {
+        "day": "2024-08-30",
+        "new_users": 17726,
+        "recurring_users": 25219
+      },
+      {
+        "day": "2024-08-29",
+        "new_users": 28096,
+        "recurring_users": 28439
+      },
+      {
+        "day": "2024-08-28",
+        "new_users": 20775,
+        "recurring_users": 26933
+      },
+      {
+        "day": "2024-08-27",
+        "new_users": 18790,
+        "recurring_users": 27663
+      },
+      {
+        "day": "2024-08-26",
+        "new_users": 17479,
+        "recurring_users": 26607
+      },
+      {
+        "day": "2024-08-25",
+        "new_users": 13479,
+        "recurring_users": 23813
+      },
+      {
+        "day": "2024-08-24",
+        "new_users": 19835,
+        "recurring_users": 26153
+      },
+      {
+        "day": "2024-08-23",
+        "new_users": 23333,
+        "recurring_users": 28045
+      },
+      {
+        "day": "2024-08-22",
+        "new_users": 18728,
+        "recurring_users": 26792
+      },
+      {
+        "day": "2024-08-21",
+        "new_users": 16978,
+        "recurring_users": 24856
+      },
+      {
+        "day": "2024-08-20",
+        "new_users": 19838,
+        "recurring_users": 27702
+      },
+      {
+        "day": "2024-08-19",
+        "new_users": 23982,
+        "recurring_users": 34402
+      },
+      {
+        "day": "2024-08-18",
+        "new_users": 17640,
+        "recurring_users": 33855
+      },
+      {
+        "day": "2024-08-17",
+        "new_users": 17947,
+        "recurring_users": 31356
+      },
+      {
+        "day": "2024-08-16",
+        "new_users": 22463,
+        "recurring_users": 34615
+      },
+      {
+        "day": "2024-08-15",
+        "new_users": 20788,
+        "recurring_users": 37277
+      },
+      {
+        "day": "2024-08-14",
+        "new_users": 26527,
+        "recurring_users": 40082
+      },
+      {
+        "day": "2024-08-13",
+        "new_users": 27162,
+        "recurring_users": 43707
+      },
+      {
+        "day": "2024-08-12",
+        "new_users": 27701,
+        "recurring_users": 40973
+      },
+      {
+        "day": "2024-08-11",
+        "new_users": 22096,
+        "recurring_users": 35963
+      },
+      {
+        "day": "2024-08-10",
+        "new_users": 25509,
+        "recurring_users": 38895
+      },
+      {
+        "day": "2024-08-09",
+        "new_users": 35431,
+        "recurring_users": 41341
+      },
+      {
+        "day": "2024-08-08",
+        "new_users": 33552,
+        "recurring_users": 43092
+      },
+      {
+        "day": "2024-08-07",
+        "new_users": 31227,
+        "recurring_users": 42634
+      },
+      {
+        "day": "2024-08-06",
+        "new_users": 38099,
+        "recurring_users": 41646
+      },
+      {
+        "day": "2024-08-05",
+        "new_users": 26785,
+        "recurring_users": 34014
+      },
+      {
+        "day": "2024-08-04",
+        "new_users": 27005,
+        "recurring_users": 34201
+      },
+      {
+        "day": "2024-08-03",
+        "new_users": 29495,
+        "recurring_users": 34225
+      },
+      {
+        "day": "2024-08-02",
+        "new_users": 37137,
+        "recurring_users": 40508
+      },
+      {
+        "day": "2024-08-01",
+        "new_users": 35616,
+        "recurring_users": 39428
+      },
+      {
+        "day": "2024-07-31",
+        "new_users": 50526,
+        "recurring_users": 43550
+      },
+      {
+        "day": "2024-07-30",
+        "new_users": 47474,
+        "recurring_users": 42199
+      },
+      {
+        "day": "2024-07-29",
+        "new_users": 44049,
+        "recurring_users": 39438
+      },
+      {
+        "day": "2024-07-28",
+        "new_users": 33097,
+        "recurring_users": 35696
+      },
+      {
+        "day": "2024-07-27",
+        "new_users": 32145,
+        "recurring_users": 36436
+      },
+      {
+        "day": "2024-07-26",
+        "new_users": 54506,
+        "recurring_users": 36732
+      },
+      {
+        "day": "2024-07-25",
+        "new_users": 41874,
+        "recurring_users": 34306
+      },
+      {
+        "day": "2024-07-24",
+        "new_users": 38526,
+        "recurring_users": 37557
+      },
+      {
+        "day": "2024-07-23",
+        "new_users": 34911,
+        "recurring_users": 38924
+      },
+      {
+        "day": "2024-07-22",
+        "new_users": 38832,
+        "recurring_users": 39318
+      },
+      {
+        "day": "2024-07-21",
+        "new_users": 35343,
+        "recurring_users": 36608
+      },
+      {
+        "day": "2024-07-20",
+        "new_users": 29659,
+        "recurring_users": 33531
+      },
+      {
+        "day": "2024-07-19",
+        "new_users": 34046,
+        "recurring_users": 36858
+      },
+      {
+        "day": "2024-07-18",
+        "new_users": 33969,
+        "recurring_users": 36456
+      },
+      {
+        "day": "2024-07-17",
+        "new_users": 38554,
+        "recurring_users": 36374
+      },
+      {
+        "day": "2024-07-16",
+        "new_users": 41538,
+        "recurring_users": 38792
+      },
+      {
+        "day": "2024-07-15",
+        "new_users": 42330,
+        "recurring_users": 38396
+      },
+      {
+        "day": "2024-07-14",
+        "new_users": 39751,
+        "recurring_users": 36633
+      },
+      {
+        "day": "2024-07-13",
+        "new_users": 40455,
+        "recurring_users": 35396
+      },
+      {
+        "day": "2024-07-12",
+        "new_users": 45315,
+        "recurring_users": 33061
+      },
+      {
+        "day": "2024-07-11",
+        "new_users": 38333,
+        "recurring_users": 33442
+      },
+      {
+        "day": "2024-07-10",
+        "new_users": 36585,
+        "recurring_users": 31514
+      },
+      {
+        "day": "2024-07-09",
+        "new_users": 37035,
+        "recurring_users": 31872
+      },
+      {
+        "day": "2024-07-08",
+        "new_users": 36842,
+        "recurring_users": 30030
+      },
+      {
+        "day": "2024-07-07",
+        "new_users": 31052,
+        "recurring_users": 29850
+      },
+      {
+        "day": "2024-07-06",
+        "new_users": 34880,
+        "recurring_users": 30616
+      },
+      {
+        "day": "2024-07-05",
+        "new_users": 34465,
+        "recurring_users": 29628
+      },
+      {
+        "day": "2024-07-04",
+        "new_users": 36798,
+        "recurring_users": 32422
+      },
+      {
+        "day": "2024-07-03",
+        "new_users": 36552,
+        "recurring_users": 34252
+      },
+      {
+        "day": "2024-07-02",
+        "new_users": 39591,
+        "recurring_users": 33093
+      },
+      {
+        "day": "2024-07-01",
+        "new_users": 39966,
+        "recurring_users": 34425
+      },
+      {
+        "day": "2024-06-30",
+        "new_users": 40149,
+        "recurring_users": 31211
+      },
+      {
+        "day": "2024-06-29",
+        "new_users": 39625,
+        "recurring_users": 31823
+      },
+      {
+        "day": "2024-06-28",
+        "new_users": 45213,
+        "recurring_users": 35486
+      },
+      {
+        "day": "2024-06-27",
+        "new_users": 51727,
+        "recurring_users": 34962
+      },
+      {
+        "day": "2024-06-26",
+        "new_users": 44878,
+        "recurring_users": 33129
+      },
+      {
+        "day": "2024-06-25",
+        "new_users": 41529,
+        "recurring_users": 31597
+      },
+      {
+        "day": "2024-06-24",
+        "new_users": 47176,
+        "recurring_users": 29846
+      },
+      {
+        "day": "2024-06-23",
+        "new_users": 47429,
+        "recurring_users": 30942
+      },
+      {
+        "day": "2024-06-22",
+        "new_users": 52116,
+        "recurring_users": 32911
+      },
+      {
+        "day": "2024-06-21",
+        "new_users": 56816,
+        "recurring_users": 35564
+      },
+      {
+        "day": "2024-06-20",
+        "new_users": 55097,
+        "recurring_users": 36362
+      },
+      {
+        "day": "2024-06-19",
+        "new_users": 48179,
+        "recurring_users": 34802
+      },
+      {
+        "day": "2024-06-18",
+        "new_users": 42841,
+        "recurring_users": 34568
+      },
+      {
+        "day": "2024-06-17",
+        "new_users": 46554,
+        "recurring_users": 36310
+      },
+      {
+        "day": "2024-06-16",
+        "new_users": 42640,
+        "recurring_users": 29758
+      },
+      {
+        "day": "2024-06-15",
+        "new_users": 43056,
+        "recurring_users": 29157
+      },
+      {
+        "day": "2024-06-14",
+        "new_users": 37251,
+        "recurring_users": 32320
+      },
+      {
+        "day": "2024-06-13",
+        "new_users": 42233,
+        "recurring_users": 35242
+      },
+      {
+        "day": "2024-06-12",
+        "new_users": 41309,
+        "recurring_users": 37181
+      },
+      {
+        "day": "2024-06-11",
+        "new_users": 41027,
+        "recurring_users": 35354
+      },
+      {
+        "day": "2024-06-10",
+        "new_users": 42203,
+        "recurring_users": 36649
+      },
+      {
+        "day": "2024-06-09",
+        "new_users": 37130,
+        "recurring_users": 32138
+      },
+      {
+        "day": "2024-06-08",
+        "new_users": 36704,
+        "recurring_users": 34207
+      },
+      {
+        "day": "2024-06-07",
+        "new_users": 36037,
+        "recurring_users": 34074
+      },
+      {
+        "day": "2024-06-06",
+        "new_users": 32567,
+        "recurring_users": 31741
+      },
+      {
+        "day": "2024-06-05",
+        "new_users": 29312,
+        "recurring_users": 30439
+      },
+      {
+        "day": "2024-06-04",
+        "new_users": 28689,
+        "recurring_users": 29257
+      },
+      {
+        "day": "2024-06-03",
+        "new_users": 30920,
+        "recurring_users": 32006
+      },
+      {
+        "day": "2024-06-02",
+        "new_users": 31826,
+        "recurring_users": 29837
+      },
+      {
+        "day": "2024-06-01",
+        "new_users": 34668,
+        "recurring_users": 30282
+      },
+      {
+        "day": "2024-05-31",
+        "new_users": 34216,
+        "recurring_users": 32023
+      },
+      {
+        "day": "2024-05-30",
+        "new_users": 35414,
+        "recurring_users": 33628
+      },
+      {
+        "day": "2024-05-29",
+        "new_users": 28228,
+        "recurring_users": 34560
+      },
+      {
+        "day": "2024-05-28",
+        "new_users": 25323,
+        "recurring_users": 35064
+      },
+      {
+        "day": "2024-05-27",
+        "new_users": 22876,
+        "recurring_users": 32136
+      },
+      {
+        "day": "2024-05-26",
+        "new_users": 17010,
+        "recurring_users": 27384
+      },
+      {
+        "day": "2024-05-25",
+        "new_users": 15978,
+        "recurring_users": 26608
+      },
+      {
+        "day": "2024-05-24",
+        "new_users": 18631,
+        "recurring_users": 28921
+      },
+      {
+        "day": "2024-05-23",
+        "new_users": 21723,
+        "recurring_users": 28557
+      },
+      {
+        "day": "2024-05-22",
+        "new_users": 23510,
+        "recurring_users": 30362
+      },
+      {
+        "day": "2024-05-21",
+        "new_users": 22375,
+        "recurring_users": 29931
+      },
+      {
+        "day": "2024-05-20",
+        "new_users": 22477,
+        "recurring_users": 29169
+      },
+      {
+        "day": "2024-05-19",
+        "new_users": 22958,
+        "recurring_users": 27432
+      },
+      {
+        "day": "2024-05-18",
+        "new_users": 20165,
+        "recurring_users": 27230
+      },
+      {
+        "day": "2024-05-17",
+        "new_users": 21434,
+        "recurring_users": 24433
+      },
+      {
+        "day": "2024-05-16",
+        "new_users": 14440,
+        "recurring_users": 26021
+      },
+      {
+        "day": "2024-05-15",
+        "new_users": 24198,
+        "recurring_users": 30650
+      },
+      {
+        "day": "2024-05-14",
+        "new_users": 22776,
+        "recurring_users": 30248
+      },
+      {
+        "day": "2024-05-13",
+        "new_users": 22972,
+        "recurring_users": 30337
+      },
+      {
+        "day": "2024-05-12",
+        "new_users": 18973,
+        "recurring_users": 27071
+      },
+      {
+        "day": "2024-05-11",
+        "new_users": 16667,
+        "recurring_users": 24233
+      },
+      {
+        "day": "2024-05-10",
+        "new_users": 18100,
+        "recurring_users": 24919
+      },
+      {
+        "day": "2024-05-09",
+        "new_users": 17826,
+        "recurring_users": 24141
+      },
+      {
+        "day": "2024-05-08",
+        "new_users": 17130,
+        "recurring_users": 23426
+      },
+      {
+        "day": "2024-05-07",
+        "new_users": 17238,
+        "recurring_users": 22199
+      },
+      {
+        "day": "2024-05-06",
+        "new_users": 17296,
+        "recurring_users": 21701
+      },
+      {
+        "day": "2024-05-05",
+        "new_users": 14967,
+        "recurring_users": 19518
+      },
+      {
+        "day": "2024-05-04",
+        "new_users": 17638,
+        "recurring_users": 19771
+      },
+      {
+        "day": "2024-05-03",
+        "new_users": 15827,
+        "recurring_users": 17920
+      },
+      {
+        "day": "2024-05-02",
+        "new_users": 14062,
+        "recurring_users": 15713
+      },
+      {
+        "day": "2024-05-01",
+        "new_users": 11279,
+        "recurring_users": 13544
+      },
+      {
+        "day": "2024-04-30",
+        "new_users": 12968,
+        "recurring_users": 13755
+      },
+      {
+        "day": "2024-04-29",
+        "new_users": 13298,
+        "recurring_users": 12734
+      },
+      {
+        "day": "2024-04-28",
+        "new_users": 13653,
+        "recurring_users": 10749
+      },
+      {
+        "day": "2024-04-27",
+        "new_users": 17090,
+        "recurring_users": 7522
+      },
+      {
+        "day": "2024-04-26",
+        "new_users": 16900,
+        "recurring_users": 0
+      }
+    ],
+    "metadata": {
+      "column_names": [
+        "day",
+        "new_users",
+        "recurring_users"
+      ],
+      "column_types": [
+        "date",
+        "bigint",
+        "bigint"
+      ],
+      "row_count": 361,
+      "result_set_bytes": 7220,
+      "total_row_count": 361,
+      "total_result_set_bytes": 7220,
+      "datapoint_count": 1083,
+      "pending_time_millis": 343,
+      "execution_time_millis": 241790
+    }
+  }
+}

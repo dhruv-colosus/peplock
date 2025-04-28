@@ -1,0 +1,88 @@
+{
+  "success": true,
+  "data": {
+    "rows": [
+      {
+        "balance": "20404787.348240000000000000067446048746",
+        "holder": "4QomCnZjhNPrXsm6QM999Eo6ZGtvmyCqeTAhgVdndNcB",
+        "holding": "0.020430025250359582999711872963732872677",
+        "supply": "998764666.13181800000000000027550184356"
+      },
+      {
+        "balance": "17597267.549488000000000000738742400586",
+        "holder": "2P1hysVZ1NHXvn3QjHpM4y4oD4ekuqVGWr6fsXsj4UF9",
+        "holding": "0.017619032937600431999649198272495098649",
+        "supply": "998764666.13181800000000000027550184356"
+      },
+      {
+        "balance": "16865152.679912000000000000740629779727",
+        "holder": "6wTVWXQPCmmAJra4wFMoy6kae5s2FguHyhcXyhTGmgTt",
+        "holding": "0.01688601254310504399973379228289127596",
+        "supply": "998764666.13181800000000000027550184356"
+      },
+      {
+        "balance": "16098956.229301999999999999747812839956",
+        "holder": "2QcJDFbfWCz1wjhsAT3PxL9PtKDdxzCZMyJRC5shzvQL",
+        "holding": "0.016118868413369804999839339336442645134",
+        "supply": "998764666.13181800000000000027550184356"
+      },
+      {
+        "balance": "14872857.365939999999999999655275750854",
+        "holder": "Gj5t6KjTw3gWW7SrMHEi1ojCkaYHyvLwb17gktf96HNH",
+        "holding": "0.014891253035153993999579276254902060472",
+        "supply": "998764666.13181800000000000027550184356"
+      },
+      {
+        "balance": "10584921.897373999999999999790945004463",
+        "holder": "2Lj48qxZZfU64i5VCEnwkz17S484kUVot6fmmLsS3AJL",
+        "holding": "0.0105980139829826450002776090306144674",
+        "supply": "998764666.13181800000000000027550184356"
+      },
+      {
+        "balance": "10570176.336393000000000000175581771344",
+        "holder": "8UnFpzo6zxpazUWjMkAJQxZYd3yF2KerAkT9Kd2of9fy",
+        "holding": "0.010583250183780467000258537855345020162",
+        "supply": "998764666.13181800000000000027550184356"
+      },
+      {
+        "balance": "10484877.966340000000000000184019466332",
+        "holder": "2jx6QGKkv8acv8sEP59br7k4mVzBZt6bKuzucRsnVGs2",
+        "holding": "0.010497846311431480999815254138984865762",
+        "supply": "998764666.13181800000000000027550184356"
+      },
+      {
+        "balance": "9660000",
+        "holder": "BEcKPkLtvvG3WRFgeda8FnQCSzw7VEFYAzaTbtEG9XuX",
+        "holding": "0.0096719480850407489997783106946971365403",
+        "supply": "998764666.13181800000000000027550184356"
+      },
+      {
+        "balance": "9532505.5011120000000000001411093464299",
+        "holder": "AczBg2a4g4NUGAEepfFkrA2nZ9iwwnpVeDGkX1XEKcco",
+        "holding": "0.0095442958930766679997978788572987607353",
+        "supply": "998764666.13181800000000000027550184356"
+      }
+    ],
+    "metadata": {
+      "column_names": [
+        "holder",
+        "balance",
+        "holding",
+        "supply"
+      ],
+      "column_types": [
+        "varchar",
+        "decimal(38, 18)",
+        "decimal(38, 18)",
+        "decimal(38, 18)"
+      ],
+      "row_count": 10,
+      "result_set_bytes": 920,
+      "total_row_count": 10,
+      "total_result_set_bytes": 920,
+      "datapoint_count": 40,
+      "pending_time_millis": 1741,
+      "execution_time_millis": 76701
+    }
+  }
+}

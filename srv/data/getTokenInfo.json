@@ -1,0 +1,31 @@
+{
+  "success": true,
+  "data": {
+    "rows": [
+      {
+        "current_holders": 17017,
+        "name": "Housecoin",
+        "symbol": "House"
+      }
+    ],
+    "metadata": {
+      "column_names": [
+        "name",
+        "symbol",
+        "current_holders"
+      ],
+      "column_types": [
+        "varchar",
+        "varchar",
+        "bigint"
+      ],
+      "row_count": 1,
+      "result_set_bytes": 22,
+      "total_row_count": 1,
+      "total_result_set_bytes": 22,
+      "datapoint_count": 3,
+      "pending_time_millis": 2135,
+      "execution_time_millis": 75935
+    }
+  }
+}

@@ -1,0 +1,34 @@
+{
+  "success": true,
+  "data": {
+    "rows": [
+      {
+        "pct_change": -51.64405657784947,
+        "revenue_sol_last_24h": 5257.483856022,
+        "revenue_usd_last_24h": 780403.9229864883,
+        "revenue_usd_prev_24h": 1613873.8441591582
+      }
+    ],
+    "metadata": {
+      "column_names": [
+        "revenue_sol_last_24h",
+        "revenue_usd_last_24h",
+        "revenue_usd_prev_24h",
+        "pct_change"
+      ],
+      "column_types": [
+        "double",
+        "double",
+        "double",
+        "double"
+      ],
+      "row_count": 1,
+      "result_set_bytes": 32,
+      "total_row_count": 1,
+      "total_result_set_bytes": 32,
+      "datapoint_count": 4,
+      "pending_time_millis": 19995,
+      "execution_time_millis": 141683
+    }
+  }
+}

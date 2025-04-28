@@ -1,17 +1,33 @@
 import { router, publicProcedure } from "../trpc";
 import { DuneClient } from "@duneanalytics/client-sdk";
 import { z } from "zod";
+import {
+  saveDataToFile,
+  readDataFromFile,
+  shouldUseLocalData,
+} from "../utils/dataStorage";
 
 const dune = new DuneClient(process.env.DUNE_API_KEY!);
+
+const fetchFromDune = async (queryId: number) => {
+  const queryResult = await dune.getLatestResult({ queryId });
+  return {
+    success: true,
+    data: queryResult.result,
+  };
+};
 
 export const dashboardRouter = router({
   getGlobalStats: publicProcedure.query(async () => {
     try {
-      const queryResult = await dune.getLatestResult({ queryId: 4996314 });
-      return {
-        success: true,
-        data: queryResult,
-      };
+      if (shouldUseLocalData()) {
+        const localData = readDataFromFile("getGlobalStats");
+        if (localData) return localData;
+      }
+
+      const result = await fetchFromDune(4996314);
+      saveDataToFile("getGlobalStats", result);
+      return result;
     } catch (error) {
       return {
         success: false,
@@ -24,11 +40,16 @@ export const dashboardRouter = router({
   }),
   getGraduatedtokens: publicProcedure.query(async () => {
     try {
-      const queryResult = await dune.getLatestResult({ queryId: 5013312 });
-      return {
-        success: true,
-        data: queryResult.result,
-      };
+      if (shouldUseLocalData()) {
+        console.log("Using local data for getGlobalStats");
+
+        const localData = readDataFromFile("getGraduatedtokens");
+        if (localData) return localData;
+      }
+
+      const result = await fetchFromDune(5013312);
+      saveDataToFile("getGraduatedtokens", result);
+      return result;
     } catch (error) {
       return {
         success: false,
@@ -41,11 +62,14 @@ export const dashboardRouter = router({
   }),
   get24hVolume: publicProcedure.query(async () => {
     try {
-      const query_result = await dune.getLatestResult({ queryId: 4996419 });
-      return {
-        success: true,
-        data: query_result.result,
-      };
+      if (shouldUseLocalData()) {
+        const localData = readDataFromFile("get24hVolume");
+        if (localData) return localData;
+      }
+
+      const result = await fetchFromDune(4996419);
+      saveDataToFile("get24hVolume", result);
+      return result;
     } catch (error) {
       return {
         success: false,
@@ -58,11 +82,14 @@ export const dashboardRouter = router({
   }),
   getTopLaunches: publicProcedure.query(async () => {
     try {
-      const queryResult = await dune.getLatestResult({ queryId: 5013341 });
-      return {
-        success: true,
-        data: queryResult.result,
-      };
+      if (shouldUseLocalData()) {
+        const localData = readDataFromFile("getTopLaunches");
+        if (localData) return localData;
+      }
+
+      const result = await fetchFromDune(5013341);
+      saveDataToFile("getTopLaunches", result);
+      return result;
     } catch (error) {
       return {
         success: false,
@@ -75,11 +102,14 @@ export const dashboardRouter = router({
   }),
   getVolumeBrackets: publicProcedure.query(async () => {
     try {
-      const queryResult = await dune.getLatestResult({ queryId: 5013376 });
-      return {
-        success: true,
-        data: queryResult.result,
-      };
+      if (shouldUseLocalData()) {
+        const localData = readDataFromFile("getVolumeBrackets");
+        if (localData) return localData;
+      }
+
+      const result = await fetchFromDune(5013376);
+      saveDataToFile("getVolumeBrackets", result);
+      return result;
     } catch (error) {
       return {
         success: false,
@@ -92,11 +122,14 @@ export const dashboardRouter = router({
   }),
   getchartdata: publicProcedure.query(async () => {
     try {
-      const queryResult = await dune.getLatestResult({ queryId: 5013509 });
-      return {
-        success: true,
-        data: queryResult.result,
-      };
+      if (shouldUseLocalData()) {
+        const localData = readDataFromFile("getchartdata");
+        if (localData) return localData;
+      }
+
+      const result = await fetchFromDune(5013509);
+      saveDataToFile("getchartdata", result);
+      return result;
     } catch (error) {
       return {
         success: false,

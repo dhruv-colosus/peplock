@@ -1,0 +1,275 @@
+{
+  "success": true,
+  "data": {
+    "rows": [
+      {
+        "avg_trade_size_usd": 270.7644253635652,
+        "day": "2025-04-27 00:00:00.000 UTC",
+        "num_traders": 5872,
+        "num_trades": 31828,
+        "volume_usd": 8617890.130471552
+      },
+      {
+        "avg_trade_size_usd": 261.0148348301879,
+        "day": "2025-04-26 00:00:00.000 UTC",
+        "num_traders": 8380,
+        "num_trades": 51253,
+        "volume_usd": 13377793.329551622
+      },
+      {
+        "avg_trade_size_usd": 413.2589492295567,
+        "day": "2025-04-25 00:00:00.000 UTC",
+        "num_traders": 4535,
+        "num_trades": 25090,
+        "volume_usd": 10368667.036169577
+      },
+      {
+        "avg_trade_size_usd": 232.17386626907012,
+        "day": "2025-04-24 00:00:00.000 UTC",
+        "num_traders": 1258,
+        "num_trades": 6952,
+        "volume_usd": 1614072.7183025754
+      },
+      {
+        "avg_trade_size_usd": 287.7234913036316,
+        "day": "2025-04-23 00:00:00.000 UTC",
+        "num_traders": 1713,
+        "num_trades": 10067,
+        "volume_usd": 2896512.3869536594
+      },
+      {
+        "avg_trade_size_usd": 289.74173256181047,
+        "day": "2025-04-22 00:00:00.000 UTC",
+        "num_traders": 1803,
+        "num_trades": 12298,
+        "volume_usd": 3563243.827045145
+      },
+      {
+        "avg_trade_size_usd": 272.3109406712023,
+        "day": "2025-04-21 00:00:00.000 UTC",
+        "num_traders": 1763,
+        "num_trades": 11478,
+        "volume_usd": 3125584.9770240597
+      },
+      {
+        "avg_trade_size_usd": 251.1179981257756,
+        "day": "2025-04-20 00:00:00.000 UTC",
+        "num_traders": 2423,
+        "num_trades": 16857,
+        "volume_usd": 4233096.0944062
+      },
+      {
+        "avg_trade_size_usd": 209.2629394818912,
+        "day": "2025-04-19 00:00:00.000 UTC",
+        "num_traders": 1258,
+        "num_trades": 7242,
+        "volume_usd": 1515482.2077278562
+      },
+      {
+        "avg_trade_size_usd": 230.76932838447757,
+        "day": "2025-04-18 00:00:00.000 UTC",
+        "num_traders": 1547,
+        "num_trades": 9348,
+        "volume_usd": 2157231.6817380963
+      },
+      {
+        "avg_trade_size_usd": 272.59235828391485,
+        "day": "2025-04-17 00:00:00.000 UTC",
+        "num_traders": 1979,
+        "num_trades": 13020,
+        "volume_usd": 3549152.5048565716
+      },
+      {
+        "avg_trade_size_usd": 334.61808411590624,
+        "day": "2025-04-16 00:00:00.000 UTC",
+        "num_traders": 1784,
+        "num_trades": 9334,
+        "volume_usd": 3123325.197137869
+      },
+      {
+        "avg_trade_size_usd": 374.5582230531751,
+        "day": "2025-04-15 00:00:00.000 UTC",
+        "num_traders": 3039,
+        "num_trades": 18959,
+        "volume_usd": 7101249.350865146
+      },
+      {
+        "avg_trade_size_usd": 336.97424480563524,
+        "day": "2025-04-14 00:00:00.000 UTC",
+        "num_traders": 2697,
+        "num_trades": 14273,
+        "volume_usd": 4809633.396110832
+      },
+      {
+        "avg_trade_size_usd": 357.2258686185827,
+        "day": "2025-04-13 00:00:00.000 UTC",
+        "num_traders": 2235,
+        "num_trades": 11627,
+        "volume_usd": 4153465.174428261
+      },
+      {
+        "avg_trade_size_usd": 383.33300473327006,
+        "day": "2025-04-12 00:00:00.000 UTC",
+        "num_traders": 2810,
+        "num_trades": 14799,
+        "volume_usd": 5672945.137047663
+      },
+      {
+        "avg_trade_size_usd": 330.79223966639853,
+        "day": "2025-04-11 00:00:00.000 UTC",
+        "num_traders": 3299,
+        "num_trades": 20026,
+        "volume_usd": 6624445.391559297
+      },
+      {
+        "avg_trade_size_usd": 305.7805956157782,
+        "day": "2025-04-10 00:00:00.000 UTC",
+        "num_traders": 4135,
+        "num_trades": 28310,
+        "volume_usd": 8656648.661882682
+      },
+      {
+        "avg_trade_size_usd": 293.4644310527143,
+        "day": "2025-04-09 00:00:00.000 UTC",
+        "num_traders": 3257,
+        "num_trades": 22320,
+        "volume_usd": 6550126.1010965835
+      },
+      {
+        "avg_trade_size_usd": 295.1994136494024,
+        "day": "2025-04-08 00:00:00.000 UTC",
+        "num_traders": 4565,
+        "num_trades": 36396,
+        "volume_usd": 10744077.85918365
+      },
+      {
+        "avg_trade_size_usd": 234.24667409886638,
+        "day": "2025-04-07 00:00:00.000 UTC",
+        "num_traders": 3353,
+        "num_trades": 27295,
+        "volume_usd": 6393762.969528558
+      },
+      {
+        "avg_trade_size_usd": 262.5176099912019,
+        "day": "2025-04-06 00:00:00.000 UTC",
+        "num_traders": 2863,
+        "num_trades": 18663,
+        "volume_usd": 4899366.155265801
+      },
+      {
+        "avg_trade_size_usd": 222.06743825485447,
+        "day": "2025-04-05 00:00:00.000 UTC",
+        "num_traders": 3552,
+        "num_trades": 19429,
+        "volume_usd": 4314548.257853568
+      },
+      {
+        "avg_trade_size_usd": 249.52798410679603,
+        "day": "2025-04-04 00:00:00.000 UTC",
+        "num_traders": 5747,
+        "num_trades": 31882,
+        "volume_usd": 7955451.18929287
+      },
+      {
+        "avg_trade_size_usd": 234.6918767851153,
+        "day": "2025-04-03 00:00:00.000 UTC",
+        "num_traders": 5501,
+        "num_trades": 38924,
+        "volume_usd": 9135146.611983828
+      },
+      {
+        "avg_trade_size_usd": 211.07643591741643,
+        "day": "2025-04-02 00:00:00.000 UTC",
+        "num_traders": 5068,
+        "num_trades": 41031,
+        "volume_usd": 8660677.242127514
+      },
+      {
+        "avg_trade_size_usd": 187.29669512659976,
+        "day": "2025-04-01 00:00:00.000 UTC",
+        "num_traders": 7015,
+        "num_trades": 54219,
+        "volume_usd": 10155039.513069112
+      },
+      {
+        "avg_trade_size_usd": 202.40821090975413,
+        "day": "2025-03-31 00:00:00.000 UTC",
+        "num_traders": 9205,
+        "num_trades": 79658,
+        "volume_usd": 16123433.264649194
+      },
+      {
+        "avg_trade_size_usd": 0.7702149377,
+        "day": "2025-03-30 00:00:00.000 UTC",
+        "num_traders": 2,
+        "num_trades": 2,
+        "volume_usd": 1.5404298754
+      },
+      {
+        "avg_trade_size_usd": 12.799935311630001,
+        "day": "2025-03-29 00:00:00.000 UTC",
+        "num_traders": 5,
+        "num_trades": 5,
+        "volume_usd": 63.99967655815001
+      },
+      {
+        "avg_trade_size_usd": 54.28368574032161,
+        "day": "2025-03-28 00:00:00.000 UTC",
+        "num_traders": 16,
+        "num_trades": 25,
+        "volume_usd": 1357.0921435080402
+      },
+      {
+        "avg_trade_size_usd": 11.885710907341668,
+        "day": "2025-03-27 00:00:00.000 UTC",
+        "num_traders": 6,
+        "num_trades": 6,
+        "volume_usd": 71.31426544405001
+      },
+      {
+        "avg_trade_size_usd": 2.662740844113333,
+        "day": "2025-03-26 00:00:00.000 UTC",
+        "num_traders": 9,
+        "num_trades": 9,
+        "volume_usd": 23.964667597019996
+      },
+      {
+        "avg_trade_size_usd": 5.862908940426765,
+        "day": "2025-03-25 00:00:00.000 UTC",
+        "num_traders": 33,
+        "num_trades": 34,
+        "volume_usd": 199.33890397451
+      },
+      {
+        "avg_trade_size_usd": 94.95725681377172,
+        "day": "2025-03-24 00:00:00.000 UTC",
+        "num_traders": 2410,
+        "num_trades": 8254,
+        "volume_usd": 783777.1977408718
+      }
+    ],
+    "metadata": {
+      "column_names": [
+        "day",
+        "num_trades",
+        "num_traders",
+        "volume_usd",
+        "avg_trade_size_usd"
+      ],
+      "column_types": [
+        "timestamp(3) with time zone",
+        "bigint",
+        "bigint",
+        "double",
+        "double"
+      ],
+      "row_count": 35,
+      "result_set_bytes": 1400,
+      "total_row_count": 35,
+      "total_result_set_bytes": 1400,
+      "datapoint_count": 175,
+      "pending_time_millis": 303,
+      "execution_time_millis": 154497
+    }
+  }
+}

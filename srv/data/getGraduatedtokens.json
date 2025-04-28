@@ -1,0 +1,34 @@
+{
+  "success": true,
+  "data": {
+    "rows": [
+      {
+        "pct_change": "1.7999999999999999999566",
+        "platform": "pump.fun",
+        "withdraw_token_last_24h": 283,
+        "withdraw_token_prev_24h": 278
+      }
+    ],
+    "metadata": {
+      "column_names": [
+        "platform",
+        "withdraw_token_last_24h",
+        "withdraw_token_prev_24h",
+        "pct_change"
+      ],
+      "column_types": [
+        "varchar(10)",
+        "bigint",
+        "bigint",
+        "decimal(23, 1)"
+      ],
+      "row_count": 1,
+      "result_set_bytes": 40,
+      "total_row_count": 1,
+      "total_result_set_bytes": 40,
+      "datapoint_count": 4,
+      "pending_time_millis": 1325,
+      "execution_time_millis": 179199
+    }
+  }
+}

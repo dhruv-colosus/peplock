@@ -1,18 +1,9 @@
-import { useParams } from "react-router-dom";
+import { useParams, useNavigate } from "react-router-dom";
 import { Copy, AlertTriangle, TrendingDown, Clock, Activity, DollarSign, AlertCircle, BarChart3, Wallet, CheckCircle, ArrowUpDown, Users } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { ComposedChart, Area, Line, XAxis, YAxis, CartesianGrid, Tooltip, ResponsiveContainer, Bar } from 'recharts';
 import { trpc } from "@/lib/trpc";
-
-// Mock data for demonstration
-const mockPriceData = [
-    { time: '00:00', price: 1.2, volume: 20 },
-    { time: '04:00', price: 1.8, volume: 35 },
-    { time: '08:00', price: 1.4, volume: 25 },
-    { time: '12:00', price: 0.8, volume: 40 },
-    { time: '16:00', price: 0.3, volume: 15 },
-    { time: '20:00', price: 0.1, volume: 5 },
-];
+import { useEffect, useState } from "react";
 
 const mockTransactions = [
     { from: 'Creator', to: '0x5678...', amount: '1,000,000', time: '2 hours ago', type: 'sell' },
@@ -20,14 +11,12 @@ const mockTransactions = [
     { from: '0x1234...', to: '0xABCD...', amount: '750,000', time: '45 minutes ago', type: 'transfer' },
 ];
 
-// Define the token info type based on the API response
 interface TokenInfo {
     name?: string;
     symbol?: string;
     current_holders?: number;
 }
 
-// Define the holder info type
 interface HolderInfo {
     holder?: string;
     balance?: string;
@@ -35,26 +24,22 @@ interface HolderInfo {
     supply?: string;
 }
 
-// Define the price data type
 interface PriceData {
     block_time: string;
     price: number;
 }
 
-// Define the volume data type
 interface VolumeData {
     day: string;
     volume_usd: number;
 }
 
-// Format holding as percentage with 1 decimal place
 const formatPercentage = (holding?: string) => {
     if (!holding) return "0.0%";
     const holdingNum = parseFloat(holding);
     return (holdingNum * 100).toFixed(1) + "%";
 };
 
-// Format price with 8 decimal places
 const formatPrice = (price?: number) => {
     if (!price) return "$0.00000000";
     return `$${price.toFixed(8)}`;
@@ -62,7 +47,33 @@ const formatPrice = (price?: number) => {
 
 export default function Token() {
     const { tokenAddress } = useParams<{ tokenAddress: string }>();
+    const navigate = useNavigate();
+    const [showRedirectPopup, setShowRedirectPopup] = useState(false);
+    const [countdown, setCountdown] = useState(5);
     const isRugged = true; // This would be determined by your backend logic
+
+    useEffect(() => {
+        if (tokenAddress !== "DitHyRMQiSDhn5cnKMJV2CDDt6sVct96YrECiM49pump") {
+            setShowRedirectPopup(true);
+            const timer = setInterval(() => {
+                setCountdown((prev) => {
+                    if (prev <= 1) {
+                        clearInterval(timer);
+                        setShowRedirectPopup(false); // Hide popup before navigation
+                        navigate("/token/DitHyRMQiSDhn5cnKMJV2CDDt6sVct96YrECiM49pump");
+                        return 0;
+                    }
+                    return prev - 1;
+                });
+            }, 1000);
+            return () => clearInterval(timer);
+        }
+    }, [tokenAddress, navigate]);
+
+    const handleRedirect = () => {
+        setShowRedirectPopup(false); // Hide popup before navigation
+        navigate("/token/DitHyRMQiSDhn5cnKMJV2CDDt6sVct96YrECiM49pump");
+    };
 
     // Fetch token data from our API
     const { data: tokenData, isLoading } = trpc.token.getTokenInfo.useQuery(
@@ -116,6 +127,44 @@ export default function Token() {
             }))
         : [];
 
+    // --- RUG PULL INDICATOR LOGIC ---
+
+    // 1. Contract Verification: Always green, graduated to Pump.fun
+    const contractVerified = true;
+    const contractVerificationText = "Token has been graduated to Pump.fun";
+
+    // 2. Activity Collapse: Red if last 2 days' volume < $50,000
+    let activityCollapseRed = false;
+    if (volumeHistory.length > 0) {
+        // Sort by day descending, sum last 2 days
+        const sortedVolume = [...volumeHistory].sort((a, b) => new Date(b.day).getTime() - new Date(a.day).getTime());
+        const last2DaysVolume = sortedVolume.slice(0, 2).reduce((sum, v) => sum + (v.volume_usd || 0), 0);
+        activityCollapseRed = last2DaysVolume < 50000;
+    }
+
+    // 3. Liquidity Removal: Red if price change in last 24h < -50%
+    let liquidityRemovalRed = false;
+    if (priceHistory.length > 0) {
+        // Find price 24h ago
+        const now = new Date(priceHistory[priceHistory.length - 1].block_time).getTime();
+        const dayAgo = now - 24 * 60 * 60 * 1000;
+        // Find the closest price at or before 24h ago
+        let price24hAgo = priceHistory[0].price;
+        for (let i = priceHistory.length - 1; i >= 0; i--) {
+            const t = new Date(priceHistory[i].block_time).getTime();
+            if (t <= dayAgo) {
+                price24hAgo = priceHistory[i].price;
+                break;
+            }
+        }
+        const priceNow = priceHistory[priceHistory.length - 1].price;
+        const change24h = ((priceNow - price24hAgo) / price24hAgo) * 100;
+        liquidityRemovalRed = change24h < -50;
+    }
+
+    // If all indicators are green, show green banner
+    const allIndicatorsGreen = contractVerified && !activityCollapseRed && !liquidityRemovalRed;
+
     const handleCopyAddress = () => {
         if (tokenAddress) {
             navigator.clipboard.writeText(tokenAddress);
@@ -124,12 +173,44 @@ export default function Token() {
 
     return (
         <div className="py-6">
-            {/* Rug Alert Banner */}
-            {isRugged && (
+            {showRedirectPopup && (
+                <div className="fixed inset-0 bg-black/80 backdrop-blur-sm flex items-center justify-center z-50">
+                    <div className="bg-white/5 border border-white/10 rounded-lg p-6 max-w-md w-full mx-4">
+                        <div className="flex flex-col items-center gap-4">
+                            <AlertTriangle className="h-12 w-12 text-yellow-500" />
+                            <h2 className="text-xl font-bold text-white text-center">Token Data Not Available</h2>
+                            <p className="text-white/60 text-center">
+                                We don't have data for this token yet. Redirecting you to the token we have data for in {countdown} seconds...
+                            </p>
+                            <Button
+                                variant="outline"
+                                className="mt-2"
+                                onClick={handleRedirect}
+                            >
+                                Redirect Now
+                            </Button>
+                        </div>
+                    </div>
+                </div>
+            )}
+
+            {/* --- TOP BANNER --- */}
+            {allIndicatorsGreen ? (
+                <div className="mb-6 p-3 bg-green-500/10 border border-green-500/30 rounded-lg backdrop-blur-sm">
+                    <div className="flex items-center gap-2">
+                        <CheckCircle className="h-5 w-5 text-green-500" />
+                        <span className="text-green-400 font-archivo font-medium text-xs">
+                            PASSES ALL TESTS: No rug pull indicators detected. Token is currently not flagged as risky.
+                        </span>
+                    </div>
+                </div>
+            ) : (
                 <div className="mb-6 p-3 bg-red-500/10 border border-red-500/30 rounded-lg backdrop-blur-sm">
                     <div className="flex items-center gap-2">
                         <AlertTriangle className="h-5 w-5 text-red-500" />
-                        <span className="text-red-400 font-archivo font-medium text-xs">HIGH RISK ALERT: Potential Rug Pull Detected</span>
+                        <span className="text-red-400 font-archivo font-medium text-xs">
+                            HIGH RISK ALERT: Potential Rug Pull Detected
+                        </span>
                     </div>
                 </div>
             )}
@@ -285,33 +366,44 @@ export default function Token() {
                             <h2 className="text-sm font-medium text-white">Rug Pull Indicators</h2>
                         </div>
                         <div className="p-4 space-y-4">
-                            <div className="flex items-start gap-3 p-3 rounded-md bg-red-500/10 border border-red-500/20">
+                            {/* Liquidity Removal */}
+                            <div className={`flex items-start gap-3 p-3 rounded-md ${liquidityRemovalRed ? 'bg-red-500/10 border border-red-500/20' : 'bg-green-500/10 border border-green-500/20'}`}>
                                 <div className="mt-0.5">
-                                    <DollarSign className="h-4 w-4 text-red-400" />
+                                    <DollarSign className={`h-4 w-4 ${liquidityRemovalRed ? 'text-red-400' : 'text-green-400'}`} />
                                 </div>
                                 <div>
                                     <h3 className="text-sm font-medium text-white mb-1">Liquidity Removal</h3>
-                                    <p className="text-xs text-white/60">95% of liquidity was removed in a single transaction at 15:30 UTC, 2 hours after launch.</p>
+                                    <p className="text-xs text-white/60">
+                                        {liquidityRemovalRed
+                                            ? "Significant liquidity was removed in the last 24 hours (price dropped > 50%)."
+                                            : "No major liquidity removal detected in the last 24 hours."}
+                                    </p>
                                 </div>
                             </div>
 
+                            {/* Contract Verification */}
                             <div className="flex items-start gap-3 p-3 rounded-md bg-green-500/10 border border-green-500/20">
                                 <div className="mt-0.5">
                                     <CheckCircle className="h-4 w-4 text-green-400" />
                                 </div>
                                 <div>
                                     <h3 className="text-sm font-medium text-white mb-1">Contract Verification</h3>
-                                    <p className="text-xs text-white/60">Contract is fully verified on blockchain explorer with readable source code.</p>
+                                    <p className="text-xs text-white/60">{contractVerificationText}</p>
                                 </div>
                             </div>
 
-                            <div className="flex items-start gap-3 p-3 rounded-md bg-red-500/10 border border-red-500/20">
+                            {/* Activity Collapse */}
+                            <div className={`flex items-start gap-3 p-3 rounded-md ${activityCollapseRed ? 'bg-red-500/10 border border-red-500/20' : 'bg-green-500/10 border border-green-500/20'}`}>
                                 <div className="mt-0.5">
-                                    <Activity className="h-4 w-4 text-red-400" />
+                                    <Activity className={`h-4 w-4 ${activityCollapseRed ? 'text-red-400' : 'text-green-400'}`} />
                                 </div>
                                 <div>
                                     <h3 className="text-sm font-medium text-white mb-1">Activity Collapse</h3>
-                                    <p className="text-xs text-white/60">Transaction volume dropped to near-zero after price crash.</p>
+                                    <p className="text-xs text-white/60">
+                                        {activityCollapseRed
+                                            ? "Transaction volume in the last 2 days is below $50,000. Possible activity collapse."
+                                            : "Healthy transaction volume in the last 2 days."}
+                                    </p>
                                 </div>
                             </div>
                         </div>

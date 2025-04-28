@@ -1,21 +1,36 @@
 import { router, publicProcedure } from "../trpc";
 import { DuneClient } from "@duneanalytics/client-sdk";
 import { z } from "zod";
+import {
+  saveDataToFile,
+  readDataFromFile,
+  shouldUseLocalData,
+} from "../utils/dataStorage";
 
 const dune = new DuneClient(process.env.DUNE_API_KEY!);
+
+const fetchFromDune = async (queryId: number) => {
+  const queryResult = await dune.getLatestResult({ queryId });
+  return {
+    success: true,
+    data: queryResult.result,
+  };
+};
 
 export const tokenRouter = router({
   getTokenInfo: publicProcedure
     .input(z.object({ tokenId: z.string() }))
     .query(async ({ input }) => {
-      // Hard coded check for the specific token ID
       if (input.tokenId === "DitHyRMQiSDhn5cnKMJV2CDDt6sVct96YrECiM49pump") {
         try {
-          const queryResult = await dune.getLatestResult({ queryId: 5019005 });
-          return {
-            success: true,
-            data: queryResult.result,
-          };
+          if (shouldUseLocalData()) {
+            const localData = readDataFromFile("getTokenInfo");
+            if (localData) return localData;
+          }
+
+          const result = await fetchFromDune(5019005);
+          saveDataToFile("getTokenInfo", result);
+          return result;
         } catch (error) {
           return {
             success: false,
@@ -36,14 +51,16 @@ export const tokenRouter = router({
   getTopHolders: publicProcedure
     .input(z.object({ tokenId: z.string() }))
     .query(async ({ input }) => {
-      // Hard coded check for the specific token ID
       if (input.tokenId === "DitHyRMQiSDhn5cnKMJV2CDDt6sVct96YrECiM49pump") {
         try {
-          const queryResult = await dune.getLatestResult({ queryId: 5018459 });
-          return {
-            success: true,
-            data: queryResult.result,
-          };
+          if (shouldUseLocalData()) {
+            const localData = readDataFromFile("getTopHolders");
+            if (localData) return localData;
+          }
+
+          const result = await fetchFromDune(5018459);
+          saveDataToFile("getTopHolders", result);
+          return result;
         } catch (error) {
           return {
             success: false,
@@ -64,9 +81,13 @@ export const tokenRouter = router({
   getPriceData: publicProcedure
     .input(z.object({ tokenId: z.string() }))
     .query(async ({ input }) => {
-      // Hard coded check for the specific token ID
       if (input.tokenId === "DitHyRMQiSDhn5cnKMJV2CDDt6sVct96YrECiM49pump") {
         try {
+          if (shouldUseLocalData()) {
+            const localData = readDataFromFile("getPriceData");
+            if (localData) return localData;
+          }
+
           const queryResult = await dune.getLatestResult({ queryId: 5019108 });
           if (!queryResult.result?.rows) {
             return {
@@ -74,19 +95,20 @@ export const tokenRouter = router({
               error: "No price data available",
             };
           }
-          // Sort the data by block_time in ascending order
           const sortedData = queryResult.result.rows.sort(
             (a: any, b: any) =>
               new Date(a.block_time).getTime() -
               new Date(b.block_time).getTime()
           );
-          return {
+          const result = {
             success: true,
             data: {
               rows: sortedData,
               latestPrice: sortedData[sortedData.length - 1]?.price || 0,
             },
           };
+          saveDataToFile("getPriceData", result);
+          return result;
         } catch (error) {
           return {
             success: false,
