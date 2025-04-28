@@ -1,0 +1,10 @@
+---
+description: 
+globs: *.tsx
+alwaysApply: false
+---
+- Use functional React components.
+- Apply Tailwind CSS; avoid inline styles.
+- Components should be modular and reusable.
+- Maintain a consistent structure.
+- This is a react JS project , do not use Next JS rules here

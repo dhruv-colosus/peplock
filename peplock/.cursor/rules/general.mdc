@@ -1,0 +1,9 @@
+---
+description: 
+globs: 
+alwaysApply: true
+---
+#General Coding Guidelines
+- Use TypeScript for all development.
+- Prioritize readability and maintainability.
+- Use clear, descriptive names.

@@ -1,0 +1,81 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    @apply bg-background text-foreground antialiased;
+    background-image: radial-gradient(
+        circle at 20% 20%,
+        rgba(139, 92, 246, 0.03) 0%,
+        transparent 40%
+      ),
+      radial-gradient(
+        circle at 80% 80%,
+        rgba(139, 92, 246, 0.02) 0%,
+        transparent 60%
+      ),
+      radial-gradient(
+        circle at 50% 50%,
+        rgba(139, 92, 246, 0.01) 0%,
+        transparent 70%
+      );
+  }
+
+  ::-webkit-scrollbar {
+    width: 6px;
+    height: 6px;
+  }
+
+  ::-webkit-scrollbar-track {
+    background: rgba(255, 255, 255, 0.05);
+  }
+
+  ::-webkit-scrollbar-thumb {
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 3px;
+  }
+
+  ::-webkit-scrollbar-thumb:hover {
+    background: rgba(255, 255, 255, 0.15);
+  }
+}
+
+.glass-card {
+  @apply backdrop-blur-xl bg-card border border-white/5;
+  box-shadow: 0 4px 24px -6px rgba(0, 0, 0, 0.3),
+    0 0 16px -2px rgba(139, 92, 246, 0.15);
+}
+
+.recharts-tooltip-cursor {
+  opacity: 0.2 !important;
+}
+
+.recharts-default-tooltip {
+  border-radius: 4px !important;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.25) !important;
+}
+
+@keyframes slide {
+  from {
+    transform: scaleX(0);
+  }
+  to {
+    transform: scaleX(1);
+  }
+}
+
+@layer utilities {
+  .animate-scroll-x {
+    animation: scroll-x 30s linear infinite;
+  }
+}
+
+@keyframes scroll-x {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
