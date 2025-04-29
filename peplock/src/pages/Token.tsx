@@ -127,6 +127,9 @@ export default function Token() {
             }))
         : [];
 
+    // Calculate total 7-day volume
+    const total7DayVolume = volumeHistory.reduce((sum, day) => sum + day.volume_usd, 0);
+
     // --- RUG PULL INDICATOR LOGIC ---
 
     // 1. Contract Verification: Always green, graduated to Pump.fun
@@ -164,6 +167,32 @@ export default function Token() {
 
     // If all indicators are green, show green banner
     const allIndicatorsGreen = contractVerified && !activityCollapseRed && !liquidityRemovalRed;
+
+    // Calculate number of green indicators
+    const greenIndicatorsCount = [contractVerified, !activityCollapseRed, !liquidityRemovalRed].filter(Boolean).length;
+
+    // Determine risk level and color based on green indicators count
+    let riskLevel = '';
+    let riskColor = '';
+    let riskTextColor = '';
+
+    if (greenIndicatorsCount === 0) {
+        riskLevel = 'Infinite';
+        riskColor = 'bg-purple-500/20';
+        riskTextColor = 'text-purple-400';
+    } else if (greenIndicatorsCount === 1) {
+        riskLevel = 'High';
+        riskColor = 'bg-red-500/20';
+        riskTextColor = 'text-red-400';
+    } else if (greenIndicatorsCount === 2) {
+        riskLevel = 'Medium';
+        riskColor = 'bg-yellow-500/20';
+        riskTextColor = 'text-yellow-400';
+    } else {
+        riskLevel = 'Low';
+        riskColor = 'bg-green-500/20';
+        riskTextColor = 'text-green-400';
+    }
 
     const handleCopyAddress = () => {
         if (tokenAddress) {
@@ -274,27 +303,28 @@ export default function Token() {
 
                 <div className="glass-card p-4 rounded-lg bg-white/5 border border-white/10">
                     <div className="flex justify-between items-start mb-2">
-                        <h3 className="text-xs text-white/50 uppercase">Liquidity</h3>
-                        <div className="w-7 h-7 flex items-center justify-center rounded-full bg-gradient-to-br from-purple-500/30 to-purple-400/10">
-                            <ArrowUpDown className="h-3.5 w-3.5 text-purple-400" />
+                        <h3 className="text-xs text-white/50 uppercase">7-Day Volume</h3>
+                        <div className="w-7 h-7 flex items-center justify-center rounded-full bg-gradient-to-br from-blue-500/30 to-blue-400/10">
+                            <BarChart3 className="h-3.5 w-3.5 text-blue-400" />
                         </div>
                     </div>
                     <div className="flex items-center gap-2">
-                        <span className="text-xl font-bold font-mono text-white">$12,345</span>
-                        <span className="text-xs px-1.5 py-0.5 rounded bg-red-500/20 text-red-400">-95%</span>
+                        <span className="text-xl font-bold font-mono text-white">
+                            ${isLoadingVolume ? "..." : total7DayVolume.toLocaleString()}
+                        </span>
                     </div>
                 </div>
 
                 <div className="glass-card p-4 rounded-lg bg-white/5 border border-white/10">
                     <div className="flex justify-between items-start mb-2">
                         <h3 className="text-xs text-white/50 uppercase">Risk Level</h3>
-                        <div className="w-7 h-7 flex items-center justify-center rounded-full bg-gradient-to-br from-red-500/30 to-red-400/10">
-                            <AlertCircle className="h-3.5 w-3.5 text-red-400" />
+                        <div className={`w-7 h-7 flex items-center justify-center rounded-full bg-gradient-to-br ${riskColor}`}>
+                            <AlertCircle className={`h-3.5 w-3.5 ${riskTextColor}`} />
                         </div>
                     </div>
                     <div className="flex items-center gap-2">
-                        <span className="text-xl font-bold text-red-400">High</span>
-                        <AlertCircle className="h-4 w-4 text-red-500" />
+                        <span className={`text-xl font-bold ${riskTextColor}`}>{riskLevel}</span>
+                        <AlertCircle className={`h-4 w-4 ${riskTextColor}`} />
                     </div>
                 </div>
             </div>

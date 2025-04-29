@@ -22,5 +22,5 @@ export const readDataFromFile = (functionName: string) => {
 };
 
 export const shouldUseLocalData = () => {
-  return process.env.USE_LOCAL_DATA === "false";
+  return process.env.USE_LOCAL_DATA === "true";
 };
