@@ -3,7 +3,7 @@ import { Toaster as Sonner } from "@/components/ui/sonner";
 import { TooltipProvider } from "@/components/ui/tooltip";
 import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
-import { useState } from "react";
+import { useState, useEffect } from "react";
 // import { httpBatchLink } from "@trpc/client";
 // import { trpc } from "@/lib/trpc";
 import Sidebar from "@/components/Sidebar";
@@ -32,20 +32,39 @@ const App = () => {
       ],
     })
   );
+  const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
+
+  // Disable scrolling when mobile menu is open
+  useEffect(() => {
+    if (isMobileMenuOpen) {
+      document.body.style.overflow = 'hidden';
+    } else {
+      document.body.style.overflow = '';
+    }
+
+    return () => {
+      document.body.style.overflow = '';
+    };
+  }, [isMobileMenuOpen]);
+
+  const toggleMobileMenu = () => {
+    setIsMobileMenuOpen(!isMobileMenuOpen);
+  };
 
   return (
     <Providers>
       <trpc.Provider client={trpcClient} queryClient={queryClient}>
-
         <QueryClientProvider client={queryClient}>
           <TooltipProvider>
             <div className="min-h-screen bg-background">
               <BrowserRouter>
                 <SearchProvider>
                   <TokenPriceTickerBar />
-                  <Sidebar />
+                  <div className="hidden md:block">
+                    <Sidebar />
+                  </div>
                   <div className="md:pl-64">
-                    <TopBar />
+                    <TopBar toggleMobileMenu={toggleMobileMenu} isMobileMenuOpen={isMobileMenuOpen} />
                     <main className="pt-[5.5rem] px-4 md:px-6 bg-black">
                       <Routes>
                         <Route path="/" element={<Index />} />

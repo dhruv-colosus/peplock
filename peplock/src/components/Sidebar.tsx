@@ -27,7 +27,7 @@ export default function Sidebar() {
     };
 
     return (
-        <div className="fixed top-6 left-0 w-64 h-[calc(100vh-1.5rem)] bg-black/20 backdrop-blur-lg border-r border-white/5 hidden md:block z-50">
+        <div className="fixed top-6 left-0 w-64 h-[calc(100vh-1.5rem)] bg-black/20 backdrop-blur-lg border-r border-white/5 z-50">
             <div className="flex flex-col h-full">
                 <div className="p-4 h-16 flex items-center border-b border-white/5">
                     <Link to="/">
@@ -75,7 +75,7 @@ export default function Sidebar() {
                         );
                     })}
                 </nav>
-                <div className=" mt-auto">
+                <div className="mt-auto">
                     <div className="p-4">
                         <div
                             className="
